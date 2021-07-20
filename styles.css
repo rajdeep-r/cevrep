@@ -11,7 +11,7 @@ body {
 .main_form {
   position: relative;
   margin: auto;
-  top: 200px;
+  top: 50px;
   padding: 60px;
   width: 30vw;
   background: white;
@@ -29,8 +29,36 @@ button {
   margin-bottom: 10px;
 }
 
+input,
+input:focus {
+  background-color: lightgrey;
+  border: none;
+  outline: none;
+}
+button {
+  background-color: #4287f5;
+  border: none;
+  transition-property: background-color box-shadow;
+  transition-duration: 1s;
+}
+button:hover {
+  background-color: skyblue;
+  box-shadow: 1px 2px 10px black;
+  cursor: pointer;
+}
+
 .login_header {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Verdana, sans-serif;
   color: grey;
+}
+
+.forgot_pass {
+  color: grey;
+}
+.create_account {
+  margin: auto;
+  position: relative;
+  top: 70px;
+  text-align: center;
 }
